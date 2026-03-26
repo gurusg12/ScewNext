@@ -37,7 +37,7 @@ function Install() {
   return (
     <button
       onClick={handleInstallClick}
-      className="bg-blue-600 hover:bg-blue-700 text-white text-sm px-3 py-1.5 rounded-md shadow transition active:scale-95"
+      className="bg-blue-600 hover:bg-blue-700 text-white text-sm p-2 py-1.5 rounded-md shadow transition active:scale-95"
     >
       Install
     </button>

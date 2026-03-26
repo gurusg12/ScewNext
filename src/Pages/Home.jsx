@@ -71,14 +71,14 @@ const HeroSection = () => {
                         </div>
 
                         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-                            Building Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-yellow-400">Dreams</span> Into Reality
+                            We build your <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-yellow-400">Dreams....</span>
                         </h1>
 
                         <p className="text-gray-300 text-lg mb-8 leading-relaxed max-w-lg">
                             With over  we transform visions into architectural masterpieces. Our commitment to quality sets new standards.
                         </p>
 
-                         
+
 
                         <div className="flex flex-wrap gap-4">
                             {/* <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="px-8 py-4 bg-blue-600 text-white rounded-full font-semibold flex items-center gap-2 shadow-xl">
@@ -89,9 +89,9 @@ const HeroSection = () => {
                                 <a href="#contact" className='flex justify-center items-center gap-4'> Get Started <ArrowRight size={20} /></a>
                             </motion.button></a>
                             <NavLink to='/projects'>
-                             <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="px-8 py-4 border-2 border-white/30 text-white rounded-full font-semibold flex items-center gap-2 hover:bg-white/10">
-                                View Projects <Play size={20} />
-                            </motion.button>
+                                <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="px-8 py-4 border-2 border-white/30 text-white rounded-full font-semibold flex items-center gap-2 hover:bg-white/10">
+                                    View Projects <Play size={20} />
+                                </motion.button>
                             </NavLink>
                         </div>
                         <div className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-white/10">
@@ -221,13 +221,14 @@ const ContactSection = () => {
                     <span className="text-blue-600 font-bold text-sm uppercase tracking-widest">Contact Us</span>
                     <h2 className="text-4xl font-bold mt-2 mb-6">Let's Build Together</h2>
                     <div className="space-y-6">
-                        <div className="flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-slate-100">
+                        <div className="flex flex-row items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-slate-100">
                             <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center"><Phone size={20} /></div>
-                            <div><p className="text-xs text-slate-400 font-bold uppercase">Phone</p><p className="font-bold text-slate-800">+1 (555) 123-4567</p></div>
+                            <div className='lg:flex gap-3 lg:items-center justify-around'><p className="text-xs text-slate-400 font-bold uppercase">Phone</p><p className="font-bold text-slate-800">8380099008 ,</p> <p className="font-bold text-slate-800">8296321942 ,</p> <p className="font-bold text-slate-800">9538779666</p></div>
                         </div>
                         <div className="flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-slate-100">
                             <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center"><Mail size={20} /></div>
-                            <div><p className="text-xs text-slate-400 font-bold uppercase">Email</p><p className="font-bold text-slate-800">info@civinext.com</p></div>
+                            <div><p className="text-xs text-slate-400 font-bold uppercase">Email</p><p className="font-bold text-slate-800">civinest@gmail.com</p></div>
+                            <div><p className="text-xs text-slate-400 font-bold uppercase">Office</p><p className="font-bold text-slate-800">6360008440</p></div>
                         </div>
                     </div>
                 </div>
