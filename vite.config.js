@@ -9,9 +9,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['logo.webp', 'logo.webp', 'logo.webp'],
       manifest: {
-        name: 'Scewnext',
-        short_name: 'Scewnext',
-        description: 'Building a stable ',
+        name: 'CIVINEST BUILDERS',
+        short_name: 'CIVINEST',
+        description: 'CIVINEST BUILDERS & DEVELOPERS LLP is a Limited Liability Partnership company and was incorporated on Feb 26, 2026 in India.',
         theme_color: '#ffffff',
         icons: [
           {
