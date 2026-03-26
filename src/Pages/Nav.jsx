@@ -7,7 +7,7 @@ import {
   ChevronRight, LogOut, UserCircle , Building2
 } from 'lucide-react';
 
-const NavBar = () => {
+const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
@@ -225,4 +225,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Nav;
