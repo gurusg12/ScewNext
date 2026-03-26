@@ -6,6 +6,7 @@ import About from './Pages/About'
 import Footer from './Pages/Footer'
 import Projects from './Pages/Projects'
 import Nav from './Pages/Nav'
+import Install from './Install'
 const App = () => {
 
   return (
@@ -13,6 +14,7 @@ const App = () => {
       {/* <NavBar/> */}
 
       <Nav/>
+     
 
       <div>  
       <Routes>

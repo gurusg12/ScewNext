@@ -6,6 +6,7 @@ import {
   Camera, Bookmark, Heart, Bell, Search, Sun, Moon,
   ChevronRight, LogOut, UserCircle , Building2
 } from 'lucide-react';
+import Install from '../Install';
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -71,20 +72,20 @@ const Nav = () => {
       `}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 md:h-20">
-            
+            <Install/>
             {/* Logo */}
-            <NavLink to="/" className="flex items-center gap-2 group">
+             <span className=" lg:text-xl   ml-6 text-sm font-bold bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400 bg-clip-text text-transparent">
+                CIVINEST builders & developers,LLP. 
+              </span>
+            <NavLink to="/" className="flex items-center gap-2 group hi">
               <motion.div
                 whileHover={{ rotate: 360 }}
                 transition={{ duration: 0.5 }}
                 className="w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center"
               >
-               
-                <Building2 size={18} className="text-white" />
+              <Building2 size={18} className="text-white" />
               </motion.div>
-              <span className="text-xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400 bg-clip-text text-transparent">
-                CIVINEST 
-              </span>
+             
             </NavLink>
 
             {/* Desktop Navigation Links */}
@@ -110,23 +111,6 @@ const Nav = () => {
                 
               ))}
             </div>
-
-            {/* Right Side Actions */}
-            <div className="hidden md:flex items-center gap-2">
-              
-              {/* Dark Mode Toggle */}
-              {/* <button 
-                onClick={toggleDarkMode}
-                className="p-2 rounded-xl text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all"
-              >
-                {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
-              </button>
-              
-              {/* User Profile */}
-             
-            </div>
-
-            {/* Mobile Menu Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="md:hidden p-2 rounded-xl text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all"
@@ -176,47 +160,13 @@ const Nav = () => {
 
                 <div className="h-px bg-gray-200 dark:bg-gray-800 my-4" />
                 
-                {/* Mobile Actions */}
-                {/* <div className="grid grid-cols-2 gap-2">
-                  <button className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-gray-600 dark:text-gray-300 bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all">
-                    <Search size={18} /> Search
-                  </button>
-                  <button className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-gray-600 dark:text-gray-300 bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all relative">
-                    <Bell size={18} /> Notifications
-                    <span className="absolute top-2 right-4 w-2 h-2 bg-red-500 rounded-full"></span>
-                  </button>
-                </div> */}
-{/*                 
-                <button 
-                  onClick={toggleDarkMode}
-                  className="w-full flex items-center justify-between px-4 py-3 rounded-xl text-gray-600 dark:text-gray-300 bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all mt-2"
-                >
-                  <div className="flex items-center gap-3">
-                    {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
-                    <span>{isDarkMode ? 'Light Mode' : 'Dark Mode'}</span>
-                  </div>
-                  <span className="text-xs text-gray-400">Toggle</span>
-                </button> */}
+
                 
-                {/* User Profile Section in Mobile */}
-                {/* <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-800">
-                  <div className="flex items-center gap-3 px-4 py-3">
-                    <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center">
-                      <UserCircle size={24} className="text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-sm font-semibold text-gray-900 dark:text-white">John Doe</p>
-                      <p className="text-xs text-gray-500 dark:text-gray-400">john@example.com</p>
-                    </div>
-                    <button className="p-2 text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20 rounded-lg">
-                      <LogOut size={18} />
-                    </button>
-                  </div>
-                </div> */}
               </div>
             </motion.div>
           )}
         </AnimatePresence>
+        
       </nav>
 
       {/* Spacer to prevent content from going under navbar */}
