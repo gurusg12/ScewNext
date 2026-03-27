@@ -217,30 +217,79 @@ const ContactSection = () => {
     return (
         <section id="contact" className="py-24 bg-slate-50">
             <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-16">
-                <div>
-                    <span className="text-blue-600 font-bold text-sm uppercase tracking-widest">Contact Us</span>
-                    <h2 className="text-4xl font-bold mt-2 mb-6">Let's Build Together</h2>
-                    <div className="space-y-6">
-                        <div className="flex flex-row items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-slate-100">
-                            <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center"><Phone size={20} /></div>
-                            <div className='lg:flex gap-3 lg:items-center justify-around'><p className="text-xs text-slate-400 font-bold uppercase">Phone</p><p className="font-bold text-slate-800">8380099008 ,</p> <p className="font-bold text-slate-800">8296321942 ,</p> <p className="font-bold text-slate-800">9538779666</p></div>
-                        </div>
-                        <div className="flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-slate-100">
-                            <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center"><Mail size={20} /></div>
-                            <div><p className="text-xs text-slate-400 font-bold uppercase">Email</p><p className="font-bold text-slate-800">civinest@gmail.com</p></div>
-                            <div><p className="text-xs text-slate-400 font-bold uppercase">Office</p><p className="font-bold text-slate-800">6360008440</p></div>
-                        </div>
-                    </div>
-                </div>
-                <div className="bg-white p-8 rounded-[2.5rem] shadow-xl border border-slate-100">
-                    <form className="space-y-4">
-                        <input type="text" placeholder="Name" className="w-full p-4 rounded-2xl bg-slate-50 border-none focus:ring-2 focus:ring-blue-500 outline-none transition" />
-                        <input type="email" placeholder="Email" className="w-full p-4 rounded-2xl bg-slate-50 border-none focus:ring-2 focus:ring-blue-500 outline-none transition" />
-                        <textarea placeholder="Message" rows="4" className="w-full p-4 rounded-2xl bg-slate-50 border-none focus:ring-2 focus:ring-blue-500 outline-none transition"></textarea>
-                        <button className="w-full bg-blue-600 text-white p-4 rounded-2xl font-bold hover:bg-blue-700 transition shadow-lg">Send Message</button>
-                    </form>
-                </div>
-            </div>
+  <div>
+    <span className="text-blue-600 font-bold text-sm uppercase tracking-widest">
+      Contact Us
+    </span>
+    <h2 className="text-4xl font-bold mt-2 mb-6">Let's Build Together</h2>
+
+    <div className="space-y-6">
+
+      {/* PHONE */}
+      <div className="flex flex-row items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-slate-100">
+        <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center">
+          <Phone size={20} />
+        </div>
+
+        <div className="lg:flex gap-3 lg:items-center justify-around">
+          <p className="text-xs text-slate-400 font-bold uppercase">Phone</p>
+
+          <a href="tel:+918380099008" className="font-bold text-slate-800 hover:text-blue-600">
+            8380099008
+          </a>
+
+          <a href="tel:+918296321942" className="font-bold text-slate-800 hover:text-blue-600">
+            8296321942
+          </a>
+
+          <a href="tel:+919538779666" className="font-bold text-slate-800 hover:text-blue-600">
+            9538779666
+          </a>
+        </div>
+      </div>
+
+      {/* EMAIL + OFFICE */}
+      <div className="flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-slate-100">
+        <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center">
+          <Mail size={20} />
+        </div>
+
+        <div>
+          <p className="text-xs text-slate-400 font-bold uppercase">Email</p>
+          <a
+            href="mailto:civinest@gmail.com"
+            className="font-bold text-slate-800 hover:text-blue-600"
+          >
+            civinest@gmail.com
+          </a>
+        </div>
+
+        <div>
+          <p className="text-xs text-slate-400 font-bold uppercase">Office</p>
+          <a
+            href="tel:+916360008440"
+            className="font-bold text-slate-800 hover:text-blue-600"
+          >
+            6360008440
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  {/* FORM (unchanged) */}
+  <div className="bg-white p-8 rounded-[2.5rem] shadow-xl border border-slate-100">
+    <form className="space-y-4">
+      <input type="text" placeholder="Name" className="w-full p-4 rounded-2xl bg-slate-50 border-none focus:ring-2 focus:ring-blue-500 outline-none transition" />
+      <input type="email" placeholder="Email" className="w-full p-4 rounded-2xl bg-slate-50 border-none focus:ring-2 focus:ring-blue-500 outline-none transition" />
+      <textarea placeholder="Message" rows="4" className="w-full p-4 rounded-2xl bg-slate-50 border-none focus:ring-2 focus:ring-blue-500 outline-none transition"></textarea>
+      <button className="w-full bg-blue-600 text-white p-4 rounded-2xl font-bold hover:bg-blue-700 transition shadow-lg">
+        Send Message
+      </button>
+    </form>
+  </div>
+</div>
         </section>
     );
 };
