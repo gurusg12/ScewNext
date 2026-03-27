@@ -96,9 +96,9 @@ const HeroSection = () => {
                         </div>
                         <div className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-white/10">
                             {[
-                                { value: "500+", label: "Projects", icon: Building2 },
-                                { value: "250+", label: "Clients", icon: Users },
-                                { value: "25+", label: "Years", icon: Award }
+                                { value: "50+", label: "Projects", icon: Building2 },
+                                { value: "50+", label: "Clients", icon: Users },
+                                { value: "5+", label: "Years", icon: Award }
                             ].map((stat, idx) => (
                                 <motion.div key={idx} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 + idx * 0.1 }}>
                                     <stat.icon className="text-blue-400 mb-2" size={24} />
