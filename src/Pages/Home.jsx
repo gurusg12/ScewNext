@@ -68,8 +68,8 @@ const HeroSection = () => {
                     <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
                         <div className="flex items-center gap-2 mb-6">
                             {/* <HardHat className="text-yellow-400" size={32} /> */}
-                            <img src="logohome.jpg" className='h-10 rounded-md w-15' alt="" />
-                            <span className="text-yellow-400 font-semibold tracking-wide uppercase">CIVINEST builders & developers, LLP.</span>
+                            <img src="logohome.jpg" className='h-12 rounded-md w-15' alt="" />
+                            <span className="text-yellow-400 text-2xl font-semibold tracking-wide uppercase">CIVINEST builders & developers, LLP.</span>
                         </div>
 
                         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
