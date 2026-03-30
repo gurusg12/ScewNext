@@ -61,26 +61,26 @@ const Nav = () => {
             : 'bg-white dark:bg-gray-900 shadow-md'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-8 sm:px-6 lg:px-8">
           
           {/* 🔥 FIX: removed w-fit */}
-          <div className="flex justify-around items-center h-16 md:h-20">
+          <div className="flex justify-between items-center h-16 md:h-20">
 
             {/* LEFT SIDE (UNCHANGED UX) */}
-            <div className="flex items-center justify-around gap-1 sm:gap-4">
-              <Install />
+            <div className="flex items-center justify-between gap-1 sm:gap-4">
 
               <motion.div
                 whileHover={{ rotate: 360 }}
                 transition={{ duration: 0.5 }}
                 className="w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center"
               >
-                <Building2 size={18} className="text-white" />
+                <img className='rounded ' src="logohome.jpg" alt="" />
+                {/* <Building2 size={18} className="text-white" /> */}
               </motion.div>
 
               {/* Responsive text */}
               <span className="text-xs sm:text-sm md:text-lg font-bold bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400 bg-clip-text text-transparent whitespace-nowrap">
-                CIVINEST BUILDERS & DEVELOPERS LLP.
+                CIVINEST
               </span>
             </div>
 
@@ -108,6 +108,9 @@ const Nav = () => {
                   }
                 </NavLink>
               ))}
+
+                <Install />
+
             </div>
 
             {/* MOBILE BUTTON */}
@@ -164,8 +167,16 @@ const Nav = () => {
                         )
                       }
                     </NavLink>
+
+                                 
+
                   </motion.div>
                 ))}
+
+                
+
+                            
+
 
                 <div className="h-px bg-gray-200 dark:bg-gray-800 my-4" />
               </div>

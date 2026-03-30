@@ -5,7 +5,8 @@ import {
     Phone, Mail, Quote,
     CheckCircle, ArrowRight, Play, Pause, Hammer,
 
-    Menu, X
+    Menu, X,
+    User
 } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 
@@ -66,7 +67,8 @@ const HeroSection = () => {
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
                         <div className="flex items-center gap-2 mb-6">
-                            <HardHat className="text-yellow-400" size={32} />
+                            {/* <HardHat className="text-yellow-400" size={32} /> */}
+                            <img src="logohome.jpg" className='h-10 rounded-md w-15' alt="" />
                             <span className="text-yellow-400 font-semibold tracking-wide uppercase">CIVINEST builders & developers, LLP.</span>
                         </div>
 
@@ -95,7 +97,54 @@ const HeroSection = () => {
                             </NavLink>
                         </div>
                         <div className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-white/10">
-                            {[
+
+                           <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.3 }}
+  className="w-full   flex justify-center"
+>
+  <div className="flex m-auto w-full lg:ml-60  justify-around  items-center gap-28 md:gap-20 text-center">
+
+    {/* Projects */}
+    <div className="flex flex-col items-center">
+      <img
+        src="logohome.jpg"
+        alt="Projects"
+        className="h-10 w-10 rounded mb-2"
+      />
+      <div className="text-2xl font-bold text-white">50+</div>
+      <div className="text-xs text-gray-400 uppercase tracking-wide">
+        Projects
+      </div>
+    </div>
+
+    {/* Clients */}
+    <div className="flex flex-col items-center">
+        <Users className="text-blue-400 mb-2" size={24} />
+
+      <div className="text-2xl font-bold text-white">50+</div>
+      <div className="text-xs text-gray-400 uppercase tracking-wide">
+        Clients
+      </div>
+    </div>
+
+    {/* Years */}
+    <div className="flex flex-col items-center">
+        <Award className="text-blue-400 mb-2" size={24} />
+      <div className="text-2xl font-bold text-white">5+</div>
+      <div className="text-xs text-gray-400 uppercase tracking-wide">
+        Years
+      </div>
+    </div>
+
+  </div>
+</motion.div>
+
+
+
+
+                            {/* {[
                                 { value: "50+", label: "Projects", icon: Building2 },
                                 { value: "50+", label: "Clients", icon: Users },
                                 { value: "5+", label: "Years", icon: Award }
@@ -105,7 +154,7 @@ const HeroSection = () => {
                                     <div className="text-2xl font-bold text-white">{stat.value}</div>
                                     <div className="text-xs text-gray-400 uppercase tracking-tighter">{stat.label}</div>
                                 </motion.div>
-                            ))}
+                            ))} */}
                         </div>
                     </motion.div>
 
@@ -217,79 +266,79 @@ const ContactSection = () => {
     return (
         <section id="contact" className="py-24 bg-slate-50">
             <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-16">
-  <div>
-    <span className="text-blue-600 font-bold text-sm uppercase tracking-widest">
-      Contact Us
-    </span>
-    <h2 className="text-4xl font-bold mt-2 mb-6">Let's Build Together</h2>
+                <div>
+                    <span className="text-blue-600 font-bold text-sm uppercase tracking-widest">
+                        Contact Us
+                    </span>
+                    <h2 className="text-4xl font-bold mt-2 mb-6">Let's Build Together</h2>
 
-    <div className="space-y-6">
+                    <div className="space-y-6">
 
-      {/* PHONE */}
-      <div className="flex flex-row items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-slate-100">
-        <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center">
-          <Phone size={20} />
-        </div>
+                        {/* PHONE */}
+                        <div className="flex flex-row items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-slate-100">
+                            <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center">
+                                <Phone size={20} />
+                            </div>
 
-        <div className="lg:flex gap-3 lg:items-center justify-around">
-          <p className="text-xs text-slate-400 font-bold uppercase">Phone</p>
+                            <div className="lg:flex flex flex-wrap gap-3 lg:items-center justify-around">
+                                <p className="text-xs text-slate-400 font-bold uppercase">Phone</p>
 
-          <a href="tel:+918380099008" className="font-bold text-slate-800 hover:text-blue-600">
-            8380099008
-          </a>
+                                <a href="tel:+918380099008" className="font-bold text-slate-800 hover:text-blue-600">
+                                    8380099008
+                                </a>
 
-          <a href="tel:+918296321942" className="font-bold text-slate-800 hover:text-blue-600">
-            8296321942
-          </a>
+                                <a href="tel:+918296321942" className="font-bold text-slate-800 hover:text-blue-600">
+                                    8296321942
+                                </a>
 
-          <a href="tel:+919538779666" className="font-bold text-slate-800 hover:text-blue-600">
-            9538779666
-          </a>
-        </div>
-      </div>
+                                <a href="tel:+919538779666" className="font-bold text-slate-800 hover:text-blue-600">
+                                    9538779666
+                                </a>
+                            </div>
+                        </div>
 
-      {/* EMAIL + OFFICE */}
-      <div className="flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-slate-100">
-        <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center">
-          <Mail size={20} />
-        </div>
+                        {/* EMAIL + OFFICE */}
+                        <div className="flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-slate-100">
+                            <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center">
+                                <Mail size={20} />
+                            </div>
 
-        <div>
-          <p className="text-xs text-slate-400 font-bold uppercase">Email</p>
-          <a
-            href="mailto:civinest@gmail.com"
-            className="font-bold text-slate-800 hover:text-blue-600"
-          >
-            civinest@gmail.com
-          </a>
-        </div>
+                            <div>
+                                <p className="text-xs text-slate-400 font-bold uppercase">Email</p>
+                                <a
+                                    href="mailto:civinest@gmail.com"
+                                    className="font-bold text-slate-800 hover:text-blue-600"
+                                >
+                                    civinest@gmail.com
+                                </a>
+                            </div>
 
-        <div>
-          <p className="text-xs text-slate-400 font-bold uppercase">Office</p>
-          <a
-            href="tel:+916360008440"
-            className="font-bold text-slate-800 hover:text-blue-600"
-          >
-            6360008440
-          </a>
-        </div>
-      </div>
+                            <div>
+                                <p className="text-xs text-slate-400 font-bold uppercase">Office</p>
+                                <a
+                                    href="tel:+916360008440"
+                                    className="font-bold text-slate-800 hover:text-blue-600"
+                                >
+                                    6360008440
+                                </a>
+                            </div>
+                        </div>
 
-    </div>
-  </div>
+                    </div>
+                </div>
 
-  {/* FORM (unchanged) */}
-  <div className="bg-white p-8 rounded-[2.5rem] shadow-xl border border-slate-100">
-    <form className="space-y-4">
-      <input type="text" placeholder="Name" className="w-full p-4 rounded-2xl bg-slate-50 border-none focus:ring-2 focus:ring-blue-500 outline-none transition" />
-      <input type="email" placeholder="Email" className="w-full p-4 rounded-2xl bg-slate-50 border-none focus:ring-2 focus:ring-blue-500 outline-none transition" />
-      <textarea placeholder="Message" rows="4" className="w-full p-4 rounded-2xl bg-slate-50 border-none focus:ring-2 focus:ring-blue-500 outline-none transition"></textarea>
-      <button className="w-full bg-blue-600 text-white p-4 rounded-2xl font-bold hover:bg-blue-700 transition shadow-lg">
-        Send Message
-      </button>
-    </form>
-  </div>
-</div>
+                {/* FORM (unchanged) */}
+                <div className="bg-white p-8 rounded-[2.5rem] shadow-xl border border-slate-100">
+                    <form className="space-y-4">
+                        <input type="text" placeholder="Name" className="w-full p-4 rounded-2xl bg-slate-50 border-none focus:ring-2 focus:ring-blue-500 outline-none transition" />
+                        <input type="email" placeholder="Email" className="w-full p-4 rounded-2xl bg-slate-50 border-none focus:ring-2 focus:ring-blue-500 outline-none transition" />
+                        <textarea placeholder="Message" rows="4" className="w-full p-4 rounded-2xl bg-slate-50 border-none focus:ring-2 focus:ring-blue-500 outline-none transition"></textarea>
+                        <button className="w-full bg-blue-600 text-white p-4 rounded-2xl font-bold hover:bg-blue-700 transition shadow-lg">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
         </section>
     );
 };
