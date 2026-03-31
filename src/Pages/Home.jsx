@@ -77,7 +77,10 @@ const HeroSection = () => {
                         </h1>
 
                         <p className="text-gray-300 text-lg mb-8 leading-relaxed max-w-lg">
-                            With over  we transform visions into architectural masterpieces. Our commitment to quality sets new standards.
+                            Welcome to civinest Builders & developers LLP company (incoroported in feb 2026)  a 
+leading provider of comprehensive construction services. Established in 2015 , we specialize 
+in delivering high-quality residential, commercial, and industrial projects that exceed our 
+clients' expectations. 
                         </p>
 
 
@@ -278,20 +281,32 @@ const ContactSection = () => {
                         <div className="flex flex-row items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-slate-100">
                             <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center">
                                 <Phone size={20} />
+                                
                             </div>
+                            <p className="text-xs text-slate-400 font-bold uppercase">Phone</p>
 
-                            <div className="lg:flex flex flex-wrap gap-3 lg:items-center justify-around">
-                                <p className="text-xs text-slate-400 font-bold uppercase">Phone</p>
+                            <div className="lg:flex lg:flex-col text-start w-full  flex flex-wrap gap-3 lg:items-end justify-around">
+                                <p className="text-xs text-slate-600 font-bold uppercase">
+                                    Er: Vinod Patil BE (civil)
+                                </p>
 
-                                <a href="tel:+918380099008" className="font-bold text-slate-800 hover:text-blue-600">
+
+                                <a href="tel:+918380099008" className="font-bold text-blue-800 hover:text-blue-600">
                                     8380099008
                                 </a>
 
-                                <a href="tel:+918296321942" className="font-bold text-slate-800 hover:text-blue-600">
+                                  <p className="text-xs text-slate-600 font-bold uppercase">
+                                    Er: Chetan Guttedara BE (civil)
+                                </p>
+
+                                <a href="tel:+918296321942" className="font-bold text-blue-800 hover:text-blue-600">
                                     8296321942
                                 </a>
+                                  <p className="text-xs text-slate-600 font-bold uppercase">
+                                    Er: Praveen Dasama BE (civil)
+                                </p>
 
-                                <a href="tel:+919538779666" className="font-bold text-slate-800 hover:text-blue-600">
+                                <a href="tel:+919538779666" className="font-bold text-blue-800 hover:text-blue-600">
                                     9538779666
                                 </a>
                             </div>
