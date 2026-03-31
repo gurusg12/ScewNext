@@ -76,11 +76,19 @@ const HeroSection = () => {
                             We build your <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-yellow-400">Dreams....</span>
                         </h1>
 
+                        <p className='text-xl text-lime-300 font-mono'>ARCHITECT’S   STRUCTURAL   ENGINEERS    CONTRACTOR  </p>
+
                         <p className="text-gray-300 text-lg mb-8 leading-relaxed max-w-lg">
                             Welcome to civinest Builders & developers LLP company (incoroported in feb 2026)  a 
 leading provider of comprehensive construction services. Established in 2015 , we specialize 
 in delivering high-quality residential, commercial, and industrial projects that exceed our 
 clients' expectations. 
+                        </p>
+                          <p className="text-gray-300 text-lg mb-8 leading-relaxed max-w-lg">
+                           With a proven track record of successful builds, we have earned a reputation for 
+excellence, innovation, and commitment to both efficiency and safety. Our team consists of 
+skilled professionals who are dedicated to providing superior craftsmanship, attention to 
+detail, and unparalleled customer service on every project. 
                         </p>
 
 
@@ -195,9 +203,12 @@ clients' expectations.
 
 const ServicesSection = () => {
     const services = [
-        { icon: Building2, title: "Residential", description: "Custom homes and renovations tailored to your lifestyle.", features: ["Custom Designs", "Smart Homes"], color: "from-blue-500 to-cyan-500" },
-        { icon: HardHat, title: "Commercial", description: "Office spaces and retail centers built for business success.", features: ["Fast Track", "Turnkey Solutions"], color: "from-indigo-500 to-purple-500" },
-        { icon: Hammer, title: "Renovations", description: "Transform existing spaces with modern upgrades.", features: ["Modern Upgrades", "Structural"], color: "from-purple-500 to-pink-500" },
+        { icon: Building2, title: "Residential-Construction:", description:  `From custom homes to multi-family complexes, we 
+deliver exceptional designs and quality. `, features: ["Custom Designs", "Smart Homes"], color: "from-blue-500 to-cyan-500" },
+        { icon: HardHat, title: "Commercial-Construction:", description: `We handle office buildings, retail spaces, and industrial 
+facilities with expertise in both design and execution. `, features: ["Fast Track", "Turnkey Solutions"], color: "from-indigo-500 to-purple-500" },
+        { icon: Hammer, title: "Renovations & Remodeling:", description:  `Whether updating an existing structure or 
+transforming a space, we ensure all projects meet the highest standards.`, features: ["Modern Upgrades", "Structural"], color: "from-purple-500 to-pink-500" },
         { icon: Ruler, title: "Design", description: "Innovative designs that combine aesthetics with functionality.", features: ["3D Rendering", "Planning"], color: "from-pink-500 to-red-500" }
     ];
 
