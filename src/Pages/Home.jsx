@@ -63,32 +63,32 @@ const HeroSection = () => {
                 <div className="absolute bottom-20 right-10 w-96 h-96 bg-indigo-600 rounded-full filter blur-3xl animate-pulse delay-1000" />
             </div>
 
-            <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-20">
+            <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-20">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
-                        <div className="flex items-center gap-2 mb-6">
+                        <div className="flex flex-col items-start gap-2 mb-6">
                             {/* <HardHat className="text-yellow-400" size={32} /> */}
-                            <img src="logohome.jpg" className='h-12 rounded-md w-15' alt="" />
-                            <span className="text-yellow-400 text-2xl font-semibold tracking-wide uppercase">CIVINEST builders & developers, LLP.</span>
+                            <img src="logohome.jpg" className='h-28 rounded-md w-28' alt="" />
+                            <span className="text-yellow-400 text-2xl font-semibold tracking-wide uppercase"> builders & developers, LLP.</span>
                         </div>
 
-                        <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                        <h1 className="text-3xl md:text-7xl font-bold text-white mb-6 leading-tight">
                             We build your <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-yellow-400">Dreams....</span>
                         </h1>
 
                         <p className='text-xl text-lime-300 font-mono'>ARCHITECT’S   STRUCTURAL   ENGINEERS    CONTRACTOR  </p>
 
                         <p className="text-gray-300 text-lg mb-8 leading-relaxed max-w-lg">
-                            Welcome to civinest Builders & developers LLP company (incoroported in feb 2026)  a 
-leading provider of comprehensive construction services. Established in 2015 , we specialize 
-in delivering high-quality residential, commercial, and industrial projects that exceed our 
-clients' expectations. 
+                            Welcome to civinest Builders & developers LLP company (incoroported in feb 2026)  a
+                            leading provider of comprehensive construction services. Established in 2015 , we specialize
+                            in delivering high-quality residential, commercial, and industrial projects that exceed our
+                            clients' expectations.
                         </p>
-                          <p className="text-gray-300 text-lg mb-8 leading-relaxed max-w-lg">
-                           With a proven track record of successful builds, we have earned a reputation for 
-excellence, innovation, and commitment to both efficiency and safety. Our team consists of 
-skilled professionals who are dedicated to providing superior craftsmanship, attention to 
-detail, and unparalleled customer service on every project. 
+                        <p className="text-gray-300 text-lg mb-8 leading-relaxed max-w-lg">
+                            With a proven track record of successful builds, we have earned a reputation for
+                            excellence, innovation, and commitment to both efficiency and safety. Our team consists of
+                            skilled professionals who are dedicated to providing superior craftsmanship, attention to
+                            detail, and unparalleled customer service on every project.
                         </p>
 
 
@@ -109,48 +109,48 @@ detail, and unparalleled customer service on every project.
                         </div>
                         <div className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-white/10">
 
-                           <motion.div
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 0.3 }}
-  className="w-full   flex justify-center"
->
-  <div className="flex m-auto w-full lg:ml-60  justify-around  items-center gap-28 md:gap-20 text-center">
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.3 }}
+                                className="w-full   flex justify-center"
+                            >
+                                <div className="flex m-auto w-full lg:ml-60  justify-around  items-center gap-28 md:gap-20 text-center">
 
-    {/* Projects */}
-    <div className="flex flex-col items-center">
-      <img
-        src="logohome.jpg"
-        alt="Projects"
-        className="h-10 w-10 rounded mb-2"
-      />
-      <div className="text-2xl font-bold text-white">50+</div>
-      <div className="text-xs text-gray-400 uppercase tracking-wide">
-        Projects
-      </div>
-    </div>
+                                    {/* Projects */}
+                                    <div className="flex flex-col items-center">
+                                        <img
+                                            src="logohome.jpg"
+                                            alt="Projects"
+                                            className="h-10 w-10 rounded mb-2"
+                                        />
+                                        <div className="text-2xl font-bold text-white">50+</div>
+                                        <div className="text-xs text-gray-400 uppercase tracking-wide">
+                                            Projects
+                                        </div>
+                                    </div>
 
-    {/* Clients */}
-    <div className="flex flex-col items-center">
-        <Users className="text-blue-400 mb-2" size={24} />
+                                    {/* Clients */}
+                                    <div className="flex flex-col items-center">
+                                        <Users className="text-blue-400 mb-2" size={24} />
 
-      <div className="text-2xl font-bold text-white">50+</div>
-      <div className="text-xs text-gray-400 uppercase tracking-wide">
-        Clients
-      </div>
-    </div>
+                                        <div className="text-2xl font-bold text-white">50+</div>
+                                        <div className="text-xs text-gray-400 uppercase tracking-wide">
+                                            Clients
+                                        </div>
+                                    </div>
 
-    {/* Years */}
-    <div className="flex flex-col items-center">
-        <Award className="text-blue-400 mb-2" size={24} />
-      <div className="text-2xl font-bold text-white">5+</div>
-      <div className="text-xs text-gray-400 uppercase tracking-wide">
-        Years
-      </div>
-    </div>
+                                    {/* Years */}
+                                    <div className="flex flex-col items-center">
+                                        <Award className="text-blue-400 mb-2" size={24} />
+                                        <div className="text-2xl font-bold text-white">5+</div>
+                                        <div className="text-xs text-gray-400 uppercase tracking-wide">
+                                            Years
+                                        </div>
+                                    </div>
 
-  </div>
-</motion.div>
+                                </div>
+                            </motion.div>
 
 
 
@@ -203,12 +203,18 @@ detail, and unparalleled customer service on every project.
 
 const ServicesSection = () => {
     const services = [
-        { icon: Building2, title: "Residential-Construction:", description:  `From custom homes to multi-family complexes, we 
-deliver exceptional designs and quality. `, features: ["Custom Designs", "Smart Homes"], color: "from-blue-500 to-cyan-500" },
-        { icon: HardHat, title: "Commercial-Construction:", description: `We handle office buildings, retail spaces, and industrial 
-facilities with expertise in both design and execution. `, features: ["Fast Track", "Turnkey Solutions"], color: "from-indigo-500 to-purple-500" },
-        { icon: Hammer, title: "Renovations & Remodeling:", description:  `Whether updating an existing structure or 
-transforming a space, we ensure all projects meet the highest standards.`, features: ["Modern Upgrades", "Structural"], color: "from-purple-500 to-pink-500" },
+        {
+            icon: Building2, title: "Residential-Construction:", description: `From custom homes to multi-family complexes, we 
+deliver exceptional designs and quality. `, features: ["Custom Designs", "Smart Homes"], color: "from-blue-500 to-cyan-500"
+        },
+        {
+            icon: HardHat, title: "Commercial-Construction:", description: `We handle office buildings, retail spaces, and industrial 
+facilities with expertise in both design and execution. `, features: ["Fast Track", "Turnkey Solutions"], color: "from-indigo-500 to-purple-500"
+        },
+        {
+            icon: Hammer, title: "Renovations & Remodeling:", description: `Whether updating an existing structure or 
+transforming a space, we ensure all projects meet the highest standards.`, features: ["Modern Upgrades", "Structural"], color: "from-purple-500 to-pink-500"
+        },
         { icon: Ruler, title: "Design", description: "Innovative designs that combine aesthetics with functionality.", features: ["3D Rendering", "Planning"], color: "from-pink-500 to-red-500" }
     ];
 
@@ -278,25 +284,30 @@ transforming a space, we ensure all projects meet the highest standards.`, featu
 
 const ContactSection = () => {
     return (
-        <section id="contact" className="py-24 bg-slate-50">
-            <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-16">
-                <div>
-                    <span className="text-blue-600 font-bold text-sm uppercase tracking-widest">
+        <section id="contact" className="pb-24 bg-slate-50 flex flex-col justify-between items-center">
+
+            <div className='flex flex-col items-center lg:gap-4 py-4'>
+                <span className="text-blue-600 font-bold text-lg  uppercase tracking-widest">
                         Contact Us
                     </span>
-                    <h2 className="text-4xl font-bold mt-2 mb-6">Let's Build Together</h2>
 
-                    <div className="space-y-6">
+                                        <h2 className="text-3xl font-bold mt-2 mb-6">Let's Build Together</h2>
+
+
+            </div>
+
+            
+              
+            <div className="max-w-7xl mx-auto px-4 py-3 bg-zinc-100 grid lg:grid-cols-2 gap-16">
+                
+                <div>
+                  
+
+                    <div className="space-y-6 flex flex-col justify-around h-full items-center">
 
                         {/* PHONE */}
-                        <div className="flex flex-row items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-slate-100">
-                            <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center">
-                                <Phone size={20} />
-                                
-                            </div>
-                            <p className="text-xs text-slate-400 font-bold uppercase">Phone</p>
-
-                            <div className="lg:flex lg:flex-col text-start w-full  flex flex-wrap gap-3 lg:items-end justify-around">
+                        <div className="flex w-64 flex-row items-center gap-4 bg-slate-50 p-4 rounded-2xl shadow-sm border border-slate-100">
+                            <div className="lg:flex lg:flex-col text-start w-full  flex flex-wrap gap-3 lg:items-start justify-around">
                                 <p className="text-xs text-slate-600 font-bold uppercase">
                                     Er: Vinod Patil BE (civil)
                                 </p>
@@ -306,14 +317,14 @@ const ContactSection = () => {
                                     8380099008
                                 </a>
 
-                                  <p className="text-xs text-slate-600 font-bold uppercase">
+                                <p className="text-xs text-slate-600 font-bold uppercase">
                                     Er: Chetan Guttedara BE (civil)
                                 </p>
 
                                 <a href="tel:+918296321942" className="font-bold text-blue-800 hover:text-blue-600">
                                     8296321942
                                 </a>
-                                  <p className="text-xs text-slate-600 font-bold uppercase">
+                                <p className="text-xs text-slate-600 font-bold uppercase">
                                     Er: Praveen Dasama BE (civil)
                                 </p>
 

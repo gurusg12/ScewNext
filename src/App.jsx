@@ -7,6 +7,8 @@ import Footer from './Pages/Footer'
 import Projects from './Pages/Projects'
 import Nav from './Pages/Nav'
 import Install from './Install'
+import Login from './Pages/Login'
+import DashBoard from './Pages/DashBoard'
 const App = () => {
 
   return (
@@ -21,6 +23,9 @@ const App = () => {
         <Route path="/" element= {<Home/>} />
         <Route path="/about" element= {<About/>} />
         <Route path="/projects" element= {<Projects/>} />
+        <Route path="/login" element= {<Login/>} />
+        <Route path="/dashboard" element= {<DashBoard/>} />
+        \
      </Routes>
      </div>
     <Footer/>

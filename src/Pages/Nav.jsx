@@ -15,6 +15,7 @@ const Nav = () => {
     { path: '/', name: 'Home', icon: Home, end: true },
     { path: '/about', name: 'About', icon: User },
     { path: '/projects', name: 'View Projects', icon: Settings },
+    { path: '/login', name: 'Login', icon: Settings },
   ];
 
   // Scroll effect
@@ -67,25 +68,25 @@ const Nav = () => {
           <div className="flex justify-between items-center h-16 md:h-20">
 
             {/* LEFT SIDE (UNCHANGED UX) */}
-            <div className="flex items-center justify-between gap-1 sm:gap-4">
+            <div className="flex w-96 items-center justify-start gap-5 sm:gap-4">
 
               <motion.div
                 whileHover={{ rotate: 360 }}
                 transition={{ duration: 0.5 }}
-                className="w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center"
+                className="w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center"
               >
-                <img className='rounded ' src="logohome.jpg" alt="" />
+                <img className='rounded h-12 w-14 object-center ' src="logohome.jpg" alt=""  />
                 {/* <Building2 size={18} className="text-white" /> */}
               </motion.div>
 
               {/* Responsive text */}
-              <span className="text-xs sm:text-sm md:text-lg font-bold bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400 bg-clip-text text-transparent whitespace-nowrap">
+              <span className="text-3xl lg:text-3xl sm:text-sm md:text-lg   bg-clip-text text-orange-400 whitespace-nowrap">
                 CIVINEST
               </span>
             </div>
 
             {/* DESKTOP NAV */}
-            <div className="hidden md:flex items-center gap-1">
+            <div className="hidden md:flex items-center lg:gap-3 gap-1">
               {navLinks.map((link) => (
                 <NavLink
                   key={link.path}

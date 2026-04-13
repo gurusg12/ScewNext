@@ -1,6 +1,6 @@
 import React from 'react'
 import { Zap } from 'lucide-react';
-
+  import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div> <footer className="bg-slate-900 text-slate-400 py-12 px-6">
@@ -12,8 +12,10 @@ const Footer = () => {
           <p className="text-sm">© 2026 CIVINEST BUILDERS & DEVELOPERS LLP. All rights reserved</p>
           <div className="flex gap-6 text-sm">
             <a href="#" className="hover:text-white transition-colors">Privacy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms</a>
-            <a href="#" className="hover:text-white transition-colors">Contact</a>
+            <a href="#" className="hover:text-white transition-colors">Terms</a>        
+<Link to="/#contact" className="hover:text-white transition-colors">
+  Contact
+</Link>
           </div>
         </div>
       </footer></div>

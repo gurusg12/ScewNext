@@ -272,7 +272,12 @@ const CoreValues = () => {
   {/* SECTION 1 */}
   <div className='flex mt-5 flex-col md:flex-row justify-center items-stretch rounded-2xl shadow-md bg-white mb-8 overflow-hidden'>
     
-   <div className='w-full  md:w-1/3 flex justify-center items-center p-6 text-center bg-sky-600 text-white font-semibold text-lg '>
+   <div className=' w-full md:w-1/3 flex justify-center items-center text-center bg-sky-600 text-white font-semibold text-lg '>
+
+   <div className='lg:h-full lg:w-full '>
+    <img src="design01.png" alt="design01" className='object-cover h-full w-full lg:object-cover lg:hidden'/>
+    <img src="vertical01.png" className='h-full w-full hidden lg:block' alt="" />
+   </div>
      
     </div>
 
@@ -298,7 +303,9 @@ const CoreValues = () => {
   {/* SECTION 2 */}
   <div className='flex flex-col md:flex-row justify-center items-stretch rounded-2xl shadow-md bg-white mb-8 overflow-hidden'>
     
-    <div className='w-full md:w-1/3 flex justify-center items-center p-6 text-center bg-sky-400 text-white font-semibold text-lg'>
+    <div className='w-full md:w-1/3 flex justify-center items-center  text-center bg-sky-400 text-white font-semibold text-lg'>
+     <img src="design02.png" alt="design01" className='object-cover h-full w-full lg:object-cover lg:hidden'/>
+    <img src="vertical02.png" className='h-full w-full hidden lg:block' alt="" />
     </div>
 
     <div className='w-full flex flex-col p-5 sm:p-8 md:p-10'>
@@ -319,7 +326,9 @@ const CoreValues = () => {
   {/* SECTION 3 */}
   <div className='flex flex-col md:flex-row justify-center items-stretch rounded-2xl shadow-md bg-white overflow-hidden'>
     
-    <div className='w-full md:w-1/3 flex justify-center items-center p-6 text-center bg-sky-600 text-white font-semibold text-lg'>
+     <div className='w-full md:w-1/3 flex justify-center items-center  text-center bg-sky-400 text-white font-semibold text-lg'>
+     <img src="vertical03.png" alt="design01" className='object-cover h-full w-full lg:object-cover lg:hidden'/>
+    <img src="vertical03.png" className='h-full w-full hidden lg:block' alt="" />
     </div>
 
     <div className='w-full flex flex-col p-5 sm:p-8 md:p-10'>
@@ -341,8 +350,9 @@ const CoreValues = () => {
 
   <div className='flex mt-5 flex-col md:flex-row justify-center items-stretch rounded-2xl shadow-md bg-white overflow-hidden'>
     
-    <div className='w-full md:w-1/3 flex justify-center items-center p-6 text-center bg-sky-600 text-white font-semibold text-lg'>
-
+     <div className='w-full md:w-1/3 flex justify-center items-center  text-center bg-sky-400 text-white font-semibold text-lg'>
+     <img src="vertical04.png" alt="design01" className='object-cover h-full w-full lg:object-cover lg:hidden'/>
+    <img src="vertical04.png" className='h-full w-full hidden lg:block' alt="" />
     </div>
 
     <div className='w-full flex flex-col p-5 sm:p-8 md:p-10'>
@@ -364,7 +374,9 @@ const CoreValues = () => {
 
   <div className='mt-5 flex flex-col md:flex-row justify-center items-stretch rounded-2xl shadow-md bg-white overflow-hidden'>
     
-    <div className='w-full md:w-1/3 flex justify-center items-center p-6 text-center bg-sky-600 text-white font-semibold text-lg'>
+  <div className='w-full md:w-1/3 flex justify-center items-center  text-center bg-sky-400 text-white font-semibold text-lg'>
+     <img src="vertical05.png" alt="design01" className='object-cover h-full w-full lg:object-cover lg:hidden'/>
+    <img src="vertical05.png" className='h-full w-full hidden lg:block' alt="" />
     </div>
 
     <div className='w-full flex flex-col p-5 sm:p-8 md:p-10'>
